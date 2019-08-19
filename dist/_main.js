@@ -98,25 +98,25 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/stylus-loader/index.js!./src/style/s.styl":
-/*!*********************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/stylus-loader!./src/style/s.styl ***!
-  \*********************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/stylus-loader/index.js?!./src/style/s.styl":
+/*!*****************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/stylus-loader??ref--5-2!./src/style/s.styl ***!
+  \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".h1 {\\n  color: #00f;\\n  font-size: 72px;\\n}\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/style/s.styl?./node_modules/css-loader/dist/cjs.js!./node_modules/stylus-loader");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(true);\n// Module\nexports.push([module.i, \".h1 {\\n  color: #00f;\\n  font-size: 72px;\\n}\\n/*# sourceMappingURL=src/style/s.css.map */\", \"\",{\"version\":3,\"sources\":[\"src/style/s.styl\",\"s.styl\"],\"names\":[],\"mappings\":\"AAGA;EACE,WAAM;EACN,eAAU;ACFZ;AACA,0CAA0C\",\"file\":\"s.styl\",\"sourcesContent\":[\"$h6 = 12px\\r\\n$h1 = 6 * $h6\\r\\n\\r\\n.h1\\r\\n  color blue\\r\\n  font-size $h1\",\".h1 {\\n  color: #00f;\\n  font-size: 72px;\\n}\\n/*# sourceMappingURL=src/style/s.css.map */\"]}]);\n\n\n//# sourceURL=webpack:///./src/style/s.styl?./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/stylus-loader??ref--5-2");
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/style/index.css":
-/*!*******************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/style/index.css ***!
-  \*******************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js?!./src/style/index.css":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--4-1!./src/style/index.css ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"h1{\\r\\n    color: red;\\r\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/style/index.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(true);\n// Module\nexports.push([module.i, \"h1{\\r\\n    color: red;\\r\\n}\", \"\",{\"version\":3,\"sources\":[\"index.css\"],\"names\":[],\"mappings\":\"AAAA;IACI,UAAU;AACd\",\"file\":\"index.css\",\"sourcesContent\":[\"h1{\\r\\n    color: red;\\r\\n}\"]}]);\n\n\n//# sourceURL=webpack:///./src/style/index.css?./node_modules/css-loader/dist/cjs.js??ref--4-1");
 
 /***/ }),
 
@@ -151,7 +151,7 @@ eval("\n\nvar stylesInDom = {};\n\nvar isOldIE = function isOldIE() {\n  var mem
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./index.css */ \"./node_modules/css-loader/dist/cjs.js!./src/style/index.css\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/style/index.css?");
+eval("var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--4-1!./index.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/style/index.css\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/style/index.css?");
 
 /***/ }),
 
@@ -162,7 +162,7 @@ eval("var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!../../node_modules/stylus-loader!./s.styl */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/stylus-loader/index.js!./src/style/s.styl\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/style/s.styl?");
+eval("var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-1!../../node_modules/stylus-loader??ref--5-2!./s.styl */ \"./node_modules/css-loader/dist/cjs.js?!./node_modules/stylus-loader/index.js?!./src/style/s.styl\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/style/s.styl?");
 
 /***/ }),
 

@@ -1,20 +1,38 @@
 const path = require('path')
-module.exports={
-    entry:'./main.js',
-    mode:'development',
+module.exports = {
+    entry: './main.js',
+    mode: 'development',
     output: {
         filename: '_main.js',
-        path:path.resolve(__dirname,'dist')
+        path: path.resolve(__dirname, 'dist')
     },
     module: {
         rules: [
             {
                 test: /\.css$/,
-                use: ['style-loader','css-loader']
+                use: ['style-loader', {
+                    loader: 'css-loader',
+                    options: {
+                        sourceMap: true
+                    }
+                }]
             },
             {
                 test: /\.styl$/,
-                use:['style-loader','css-loader','stylus-loader']
+                use: ['style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'stylus-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    }
+                ]
             }
         ]
     }
