@@ -27,6 +27,18 @@ module.exports = {
                         }
                     },
                     {
+                        loader: 'postcss-loader',
+                        options: {
+                            ident: "postcss",
+                            sourceMap: true,
+                            plugins: loader => [
+                                require('autoprefixer')(),
+                                // 这里可以使用更多配置，如上面提到的 postcss-cssnext 等
+                                // require('postcss-cssnext')()
+                            ]
+                        }
+                    },
+                    {
                         loader: 'stylus-loader',
                         options: {
                             sourceMap: true
