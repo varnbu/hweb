@@ -1,6 +1,7 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 module.exports = {
     entry: './main.js',
     mode: 'development',
@@ -58,6 +59,11 @@ module.exports = {
             filename: '[name].css',
             chunkFilename:'[id].css'
         }),
-        new OptimizeCssAssetsPlugin({})
+        new OptimizeCssAssetsPlugin({}),
+        new UglifyJsPlugin({
+            cache: true,
+            parallel: true,
+            sourceMap: true
+        })
     ]
 };
