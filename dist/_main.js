@@ -105,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".h1 {\\n  color: #00f;\\n}\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/style/s.styl?./node_modules/css-loader/dist/cjs.js!./node_modules/stylus-loader");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".h1 {\\n  color: #00f;\\n  font-size: 72px;\\n}\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/style/s.styl?./node_modules/css-loader/dist/cjs.js!./node_modules/stylus-loader");
 
 /***/ }),
 
