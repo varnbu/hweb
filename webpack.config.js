@@ -2,7 +2,8 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 module.exports = {
     entry: './main.js',
     mode: 'development',
@@ -17,11 +18,11 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader,
                     {
-                    loader: 'css-loader',
-                    options: {
-                        sourceMap: true
-                    }
-                }]
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    }]
             },
             {
                 test: /\.styl$/,
@@ -55,10 +56,10 @@ module.exports = {
             }
         ]
     },
-    plugins:[
+    plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].[hash].css',
-            chunkFilename:'[id].[hash].css'
+            chunkFilename: '[id].[hash].css'
         }),
         new OptimizeCssAssetsPlugin({}),
         new UglifyJsPlugin({
@@ -69,10 +70,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './index.html',
             minify: {
-                collapseWhitespace:true,
-                removeComments:true,
-                removeAttributeQuotes:true
+                collapseWhitespace: true,
+                removeComments: true,
+                removeAttributeQuotes: true
             }
-        })
+        }),
+        new CleanWebpackPlugin()
     ]
 };
