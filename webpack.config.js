@@ -6,7 +6,7 @@ module.exports = {
     entry: './main.js',
     mode: 'development',
     output: {
-        filename: '_main.js',
+        filename: '_main.[hash].js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
@@ -56,8 +56,8 @@ module.exports = {
     },
     plugins:[
         new MiniCssExtractPlugin({
-            filename: '[name].css',
-            chunkFilename:'[id].css'
+            filename: '[name].[hash].css',
+            chunkFilename:'[id].[hash].css'
         }),
         new OptimizeCssAssetsPlugin({}),
         new UglifyJsPlugin({
