@@ -16,6 +16,13 @@ let productionConfig = {
             {
                 test: /\.styl$/,
                 use: [
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    },
                     {
                         loader: 'postcss-loader',
                         options: {

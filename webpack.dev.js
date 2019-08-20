@@ -1,6 +1,9 @@
 const path = require('path');
 const merge = require('webpack-merge');
-const common = require('./webpack.common.js');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+let common = require('./webpack.common.js');
+console.log(common);
 let devConfig = {
     mode: 'development',
     output: {
@@ -12,6 +15,18 @@ let devConfig = {
             {
                 test: /\.styl$/,
                 use: [
+                    {
+                      loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    },
                     {
                         loader: 'postcss-loader',
                         options: {
@@ -34,6 +49,11 @@ let devConfig = {
             }
         ]
     },
-    plugins: []
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: '[name].css', // 最终输出的文件名
+            chunkFilename: '[id].css'
+        })
+    ]
 };
-module.exports=merge(common,devConfig)
+module.exports = merge(common, devConfig);

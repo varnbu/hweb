@@ -6,21 +6,25 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.css$/,
+                use:['css-loader']
+            },
+            {
                 test: /\.(png|svg|jpg|jpeg|gif)$/,
-                include: [path.resolve(__dirname,'src/')],
-                use:[{
+                include: [path.resolve(__dirname, './src/')],
+                use: [{
                     loader: 'url-loader',
-                    options:{
-                        limit:1000000
+                    options: {
+                        limit: 1000000
                     }
                 }]
             },
             {
-                test:/\.js$/,
-                use:[{
+                test: /\.js$/,
+                use: [{
                     loader: 'babel-loader',
                     options: {
-                        presets:['@babel/preset-env']
+                        presets: ['@babel/preset-env']
                     }
                 }],
                 exclude: /(node_modules)|(bower_components)/
@@ -29,7 +33,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname,'./index.html'),
+            template: path.resolve(__dirname, './index.html'),
             minify: {
                 collapseWhitespace: true,
                 removeComments: true,
@@ -37,5 +41,8 @@ module.exports = {
             }
         }),
         new CleanWebpackPlugin()
-    ]
+    ],
+    resolve: {
+        extensions: ['.js','.css','.styl']
+    }
 };
