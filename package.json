@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build": "npx webpack -c webpack.config.js"
+    "build": "npx webpack -c webpack.dev.js --mode development",
+    "prod": "npx webpack -c webpack.prod.js --mode production"
   },
   "author": "",
   "license": "ISC",
@@ -28,7 +29,8 @@
     "postcss-loader": "^3.0.0",
     "style-loader": "^1.0.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
-    "url-loader": "^2.1.0"
+    "url-loader": "^2.1.0",
+    "webpack-merge": "^4.2.1"
   },
   "browserslist": [
     "> 1%",
