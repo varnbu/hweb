@@ -3,8 +3,8 @@ import {outSay} from "../src/util";
 
 import '../src/style/index.css';
 import '../src/style/s.styl';
-let a = 1;
+let a = 2;
 console.log(a);
-console.log('hello webpack');
+console.log('hello webpack watch');
 fa();
 outSay();
