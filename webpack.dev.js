@@ -65,7 +65,13 @@ let devConfig = {
         open:true,
         publicPath:'/',
         host:'localhost',
-        port:'8300'
+        port:'8300',
+        proxy: {   // 设置代理
+            "/baidu": {
+                target: "http://www.baidu.com",
+                pathRewrite: {"^/baidu" : ""}
+            },
+        }
     }
 };
 module.exports = merge(common, devConfig);
