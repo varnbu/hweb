@@ -54,6 +54,7 @@ let devConfig = {
             filename: '[name].css', // 最终输出的文件名
             chunkFilename: '[id].css'
         })
-    ]
+    ],
+    devtool:'inline-source-map'
 };
 module.exports = merge(common, devConfig);
