@@ -15,7 +15,12 @@ module.exports = {
         rules: [
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/,
-                use:['file-loader']
+                use:[{
+                    loader: 'url-loader',
+                    options:{
+                        limit:1000000
+                    }
+                }]
             },
             {
                 test:/\.js$/,
