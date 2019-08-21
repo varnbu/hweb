@@ -4,6 +4,7 @@ const merge = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 let productionConfig = {
     mode: 'production',
@@ -55,7 +56,8 @@ let productionConfig = {
             cache: true,
             parallel: true,
             sourceMap: true
-        })
+        }),
+        new BundleAnalyzerPlugin()
     ]
 };
 module.exports = merge(common, productionConfig)

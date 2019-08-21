@@ -2,6 +2,7 @@ const path = require('path');
 const merge = require('webpack-merge');
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 let common = require('./webpack.common.js');
 console.log(common);
@@ -54,7 +55,8 @@ let devConfig = {
             chunkFilename: 'a.css'
         }),
         new webpack.NamedChunksPlugin(),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new BundleAnalyzerPlugin()
     ],
     devtool:'inline-source-map',
     devServer:{
