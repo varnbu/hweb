@@ -3,9 +3,9 @@
  [参考文档](https://github.com/pingan8787/Leo-JavaScript/blob/master/Cute-Webpack/introduction/README.md)
 
 - 初始化 webpack 
-    入口(entry)、 出口(output)、 module
+    入口(entry)、 出口(output)、 module    
 - 处理简单的 js 模块引入
-    
+    babel-loader 
 - 处理简单的 css 模块引入 
         css-loader
         style-loader 
@@ -19,3 +19,4 @@
 - 清理打包目录 clean-webpack-plugin
 - webpack 对图片进行处理优化
 - 图片转 base64 与字体文件的处理
+
