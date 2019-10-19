@@ -1,48 +1,19 @@
 const path = require('path');
+const common = require('./webpack.common');
+const merge = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-module.exports = {
-    entry: './main.js',
-    mode: 'development',
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
+let productionConfig = {
+    mode: 'production',
     output: {
         filename: '_main.[hash].js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
         rules: [
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/,
-                use:[{
-                    loader: 'url-loader',
-                    options:{
-                        limit:1000000
-                    }
-                }]
-            },
-            {
-                test:/\.js$/,
-                use:[{
-                    loader: 'babel-loader',
-                    options: {
-                        presets:['@babel/preset-env']
-                    }
-                }],
-                exclude: /(node_modules)|(bower_components)/
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            sourceMap: true
-                        }
-                    }]
-            },
             {
                 test: /\.styl$/,
                 use: [
@@ -86,14 +57,7 @@ module.exports = {
             parallel: true,
             sourceMap: true
         }),
-        new HtmlWebpackPlugin({
-            template: './index.html',
-            minify: {
-                collapseWhitespace: true,
-                removeComments: true,
-                removeAttributeQuotes: true
-            }
-        }),
-        new CleanWebpackPlugin()
+        new BundleAnalyzerPlugin()
     ]
 };
+module.exports = merge(common, productionConfig)
