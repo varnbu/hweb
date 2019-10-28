@@ -1,0 +1,658 @@
+{
+  "errors": [
+    "./src/style/s.styl 1:8\nModule parse failed: Identifier directly after number (1:8)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n> $h6 = 10px\n| $h1 = 1 * $h6\n| \n @ ./src/index.js 5:0-29",
+    "./src/style/index.css 1:2\nModule parse failed: Unexpected token (1:2)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n> h1{\n|     color: red;\n| }\n @ ./src/index.js 4:0-32"
+  ],
+  "warnings": [
+    "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/"
+  ],
+  "version": "4.39.2",
+  "hash": "5da866950f8394cec36e",
+  "time": 359,
+  "builtAt": 1571626589386,
+  "publicPath": "",
+  "outputPath": "F:\\wkspack\\webpack\\web1\\dist",
+  "assetsByChunkName": {
+    "main": "main.js"
+  },
+  "assets": [
+    {
+      "name": "main.js",
+      "size": 1638,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 1004,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "hash": "a0e2684ed1ddda993966",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "F:\\wkspack\\webpack\\web1\\src\\style\\index.css",
+          "name": "./src/style/index.css",
+          "index": 2,
+          "index2": 1,
+          "size": 258,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+          "issuerId": null,
+          "issuerName": "./src/index.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+              "name": "./src/index.js",
+              "profile": {
+                "factory": 39,
+                "building": 12
+              }
+            }
+          ],
+          "profile": {
+            "factory": 5,
+            "building": 5
+          },
+          "failed": true,
+          "errors": 1,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "F:\\wkspack\\webpack\\web1\\src\\index.js 1a32370f9e8b25fc26cc63e2f9e7edc7",
+              "module": "./src/index.js + 1 modules",
+              "moduleName": "./src/index.js + 1 modules",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../src/style/index.css",
+              "loc": "4:0-32"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "throw new Error(\"Module parse failed: Unexpected token (1:2)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n> h1{\\n|     color: red;\\n| }\");"
+        },
+        {
+          "id": 1,
+          "identifier": "F:\\wkspack\\webpack\\web1\\src\\style\\s.styl",
+          "name": "./src/style/s.styl",
+          "index": 3,
+          "index2": 2,
+          "size": 278,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+          "issuerId": null,
+          "issuerName": "./src/index.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+              "name": "./src/index.js",
+              "profile": {
+                "factory": 39,
+                "building": 12
+              }
+            }
+          ],
+          "profile": {
+            "factory": 5,
+            "building": 5
+          },
+          "failed": true,
+          "errors": 1,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "F:\\wkspack\\webpack\\web1\\src\\index.js 1a32370f9e8b25fc26cc63e2f9e7edc7",
+              "module": "./src/index.js + 1 modules",
+              "moduleName": "./src/index.js + 1 modules",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../src/style/s.styl",
+              "loc": "5:0-29"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "throw new Error(\"Module parse failed: Identifier directly after number (1:8)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n> $h6 = 10px\\n| $h1 = 1 * $h6\\n| \");"
+        },
+        {
+          "id": 2,
+          "identifier": "F:\\wkspack\\webpack\\web1\\src\\index.js 1a32370f9e8b25fc26cc63e2f9e7edc7",
+          "name": "./src/index.js + 1 modules",
+          "index": 0,
+          "index2": 3,
+          "size": 468,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src",
+              "loc": "main"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0,
+          "modules": [
+            {
+              "id": null,
+              "identifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+              "name": "./src/index.js",
+              "index": 0,
+              "index2": 3,
+              "size": 219,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "profile": {
+                "factory": 39,
+                "building": 12
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "./src",
+                  "loc": "main"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": [],
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is an entry point"
+              ],
+              "depth": 0,
+              "source": "import fa from '../src/util';\r\nimport {outSay} from \"../src/util\";\r\n\r\nimport '../src/style/index.css';\r\nimport '../src/style/s.styl';\r\nlet a = 2;\r\nconsole.log(a);\r\nconsole.log('hello webpack watch');\r\nfa();\r\noutSay();\r\n"
+            },
+            {
+              "id": null,
+              "identifier": "F:\\wkspack\\webpack\\web1\\src\\util.js",
+              "name": "./src/util.js",
+              "index": 1,
+              "index2": 0,
+              "size": 239,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [],
+              "issuer": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+              "issuerId": null,
+              "issuerName": "./src/index.js",
+              "issuerPath": [
+                {
+                  "id": null,
+                  "identifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+                  "name": "./src/index.js",
+                  "profile": {
+                    "factory": 39,
+                    "building": 12
+                  }
+                }
+              ],
+              "profile": {
+                "factory": 5,
+                "building": 5
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+                  "module": "./src/index.js",
+                  "moduleName": "./src/index.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "../src/util",
+                  "loc": "1:0-29"
+                },
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+                  "module": "./src/index.js",
+                  "moduleName": "./src/index.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "../src/util",
+                  "loc": "2:0-35"
+                },
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+                  "module": "./src/index.js",
+                  "moduleName": "./src/index.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "../src/util",
+                  "loc": "9:0-2"
+                },
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+                  "module": "./src/index.js",
+                  "moduleName": "./src/index.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "../src/util",
+                  "loc": "10:0-6"
+                }
+              ],
+              "usedExports": [
+                "default",
+                "outSay"
+              ],
+              "providedExports": [
+                "default",
+                "outSay",
+                "helloBaiDu"
+              ],
+              "optimizationBailout": [],
+              "depth": 1,
+              "source": "export default function () {\r\n    console.log('util js');\r\n}\r\nexport function outSay() {\r\n    console.log('say js hot hello util ');\r\n\r\n}\r\nexport function helloBaiDu(){\r\n    fetch('/baidu').then(res=>{\r\n        console.log(res);\r\n    })\r\n}"
+            }
+          ],
+          "filteredModules": 0
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./src",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "F:\\wkspack\\webpack\\web1\\src\\style\\index.css",
+      "name": "./src/style/index.css",
+      "index": 2,
+      "index2": 1,
+      "size": 258,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+      "issuerId": null,
+      "issuerName": "./src/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+          "name": "./src/index.js",
+          "profile": {
+            "factory": 39,
+            "building": 12
+          }
+        }
+      ],
+      "profile": {
+        "factory": 5,
+        "building": 5
+      },
+      "failed": true,
+      "errors": 1,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "F:\\wkspack\\webpack\\web1\\src\\index.js 1a32370f9e8b25fc26cc63e2f9e7edc7",
+          "module": "./src/index.js + 1 modules",
+          "moduleName": "./src/index.js + 1 modules",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../src/style/index.css",
+          "loc": "4:0-32"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source": "throw new Error(\"Module parse failed: Unexpected token (1:2)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n> h1{\\n|     color: red;\\n| }\");"
+    },
+    {
+      "id": 1,
+      "identifier": "F:\\wkspack\\webpack\\web1\\src\\style\\s.styl",
+      "name": "./src/style/s.styl",
+      "index": 3,
+      "index2": 2,
+      "size": 278,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+      "issuerId": null,
+      "issuerName": "./src/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+          "name": "./src/index.js",
+          "profile": {
+            "factory": 39,
+            "building": 12
+          }
+        }
+      ],
+      "profile": {
+        "factory": 5,
+        "building": 5
+      },
+      "failed": true,
+      "errors": 1,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "F:\\wkspack\\webpack\\web1\\src\\index.js 1a32370f9e8b25fc26cc63e2f9e7edc7",
+          "module": "./src/index.js + 1 modules",
+          "moduleName": "./src/index.js + 1 modules",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../src/style/s.styl",
+          "loc": "5:0-29"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source": "throw new Error(\"Module parse failed: Identifier directly after number (1:8)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n> $h6 = 10px\\n| $h1 = 1 * $h6\\n| \");"
+    },
+    {
+      "id": 2,
+      "identifier": "F:\\wkspack\\webpack\\web1\\src\\index.js 1a32370f9e8b25fc26cc63e2f9e7edc7",
+      "name": "./src/index.js + 1 modules",
+      "index": 0,
+      "index2": 3,
+      "size": 468,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src",
+          "loc": "main"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 0,
+      "modules": [
+        {
+          "id": null,
+          "identifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+          "name": "./src/index.js",
+          "index": 0,
+          "index2": 3,
+          "size": 219,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 39,
+            "building": 12
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src",
+              "loc": "main"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is an entry point"
+          ],
+          "depth": 0,
+          "source": "import fa from '../src/util';\r\nimport {outSay} from \"../src/util\";\r\n\r\nimport '../src/style/index.css';\r\nimport '../src/style/s.styl';\r\nlet a = 2;\r\nconsole.log(a);\r\nconsole.log('hello webpack watch');\r\nfa();\r\noutSay();\r\n"
+        },
+        {
+          "id": null,
+          "identifier": "F:\\wkspack\\webpack\\web1\\src\\util.js",
+          "name": "./src/util.js",
+          "index": 1,
+          "index2": 0,
+          "size": 239,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [],
+          "issuer": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+          "issuerId": null,
+          "issuerName": "./src/index.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+              "name": "./src/index.js",
+              "profile": {
+                "factory": 39,
+                "building": 12
+              }
+            }
+          ],
+          "profile": {
+            "factory": 5,
+            "building": 5
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../src/util",
+              "loc": "1:0-29"
+            },
+            {
+              "moduleId": null,
+              "moduleIdentifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../src/util",
+              "loc": "2:0-35"
+            },
+            {
+              "moduleId": null,
+              "moduleIdentifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony import specifier",
+              "userRequest": "../src/util",
+              "loc": "9:0-2"
+            },
+            {
+              "moduleId": null,
+              "moduleIdentifier": "F:\\wkspack\\webpack\\web1\\src\\index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony import specifier",
+              "userRequest": "../src/util",
+              "loc": "10:0-6"
+            }
+          ],
+          "usedExports": [
+            "default",
+            "outSay"
+          ],
+          "providedExports": [
+            "default",
+            "outSay",
+            "helloBaiDu"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "export default function () {\r\n    console.log('util js');\r\n}\r\nexport function outSay() {\r\n    console.log('say js hot hello util ');\r\n\r\n}\r\nexport function helloBaiDu(){\r\n    fetch('/baidu').then(res=>{\r\n        console.log(res);\r\n    })\r\n}"
+        }
+      ],
+      "filteredModules": 0
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": []
+}
